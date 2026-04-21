@@ -1,11 +1,12 @@
-# Sonni matn (string) ko'rinishida o'qiymiz
-s = input()
-
-# Birinchi 3 ta raqamni ajratib olamiz va yig'indisini hisoblaymiz
-chap_qism = int(s[0]) + int(s[1]) + int(s[2])
-
-# Oxirgi 3 ta raqamni ajratib olamiz va yig'indisini hisoblaymiz
-ong_qism = int(s[3]) + int(s[4]) + int(s[5])
-
-# Yig'indilar teng bo'lsa True, aks holda False chiqaramiz
-print(chap_qism == ong_qism)
+def sum_of_digits(number):
+    s = 0
+    for digit in str(number):
+        raqam = int(digit)
+        s += raqam 
+    return s
+n = input()
+start = n[0 : 3]
+end = n[0 : 3]
+# print(start , end)
+if sum_of_digits(start) == sum_of_digits(end):
+    print("YES")
