@@ -9,3 +9,6 @@ def filter_list(list , n):
             if even_num % 2 == 0:
                 list.remove(even_num)
                 return list
+            
+print(filter_list([1, 2, 3, 4, 5, 6], 0)) 
+print(filter_list([3, 5, 3, 6, 1], 1))    
