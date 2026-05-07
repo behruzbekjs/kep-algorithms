@@ -30,12 +30,11 @@ def find_max(*numbers):
     if len(numbers) == 0:
         return None
     
-    eng_katta = numbers[0]
-    
+    max_num = numbers[0]
     for son in numbers:
-        if son > eng_katta:
-            eng_katta = son
-    return eng_katta
+        if son > max_num:
+            max_num = son
+    return max_num
 
 print(find_max(4, 8, 2, 10, 6))  
 print(find_max(-5, -2, -10))     
